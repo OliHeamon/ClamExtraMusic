@@ -1,0 +1,3 @@
+displayName = Calamity Mod Extra Music
+author = Oli
+version = 1.0
