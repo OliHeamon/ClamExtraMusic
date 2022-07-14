@@ -6,7 +6,7 @@ namespace ClamExtraMusic
 {
     public class WallOfFleshSceneEffect : ModSceneEffect
     {
-        private const int musicDistance = 4800; // 300 tiles.
+        private const int musicDistance = 5000; // Distance vanilla uses for this boss.
 
         public override int Music => MusicLoader.GetMusicSlot(Mod, "Assets/Music/PurgatorysAssault");
 

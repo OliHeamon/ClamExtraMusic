@@ -24,7 +24,10 @@ namespace ClamExtraMusic
         {
             for (int i = 0; i < activeNpcIds.Length; i++)
             {
-                return NPC.AnyNPCs(activeNpcIds[i]);
+                if (NPC.AnyNPCs(activeNpcIds[i]))
+                {
+                    return true;
+                }
             }
 
             return false;
