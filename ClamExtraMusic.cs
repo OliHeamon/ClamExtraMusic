@@ -3,8 +3,8 @@ using Terraria.ModLoader;
 
 namespace ClamExtraMusic
 {
-	public class ClamExtraMusic : Mod
-	{
+    public class ClamExtraMusic : Mod
+    {
         public override void Load()
         {
             AddContent(new BossMusicSceneEffect("BreakingTheSeal", NPCID.CultistBoss));
