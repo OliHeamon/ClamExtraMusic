@@ -33,6 +33,6 @@ namespace ClamExtraMusic
             return false;
         }
 
-        public override SceneEffectPriority Priority => SceneEffectPriority.BossHigh;
+        public override SceneEffectPriority Priority => ModContent.GetInstance<PriorityConfig>().BossScenePriority;
     }
 }

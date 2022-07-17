@@ -22,6 +22,6 @@ namespace ClamExtraMusic
             return wallOfFlesh.DistanceSQ(player.Center) < musicDistance * musicDistance;
         }
 
-        public override SceneEffectPriority Priority => SceneEffectPriority.BossHigh;
+        public override SceneEffectPriority Priority => ModContent.GetInstance<PriorityConfig>().BossScenePriority;
     }
 }

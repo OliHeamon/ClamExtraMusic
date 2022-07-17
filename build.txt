@@ -1,3 +1,7 @@
 displayName = Calamity Mod Extra Music
 author = Oli
-version = 1.0
+version = 1.0.1
+side = Client
+hideCode = false
+hideResources = false
+buildIgnore = vs/*, *.csproj, *.sln, *.pidb, *.userprefs, *.user, obj/*, bin/*

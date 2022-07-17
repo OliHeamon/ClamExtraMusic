@@ -9,6 +9,6 @@ namespace ClamExtraMusic
 
         public override bool IsSceneEffectActive(Player player) => player.ZoneMeteor;
 
-        public override SceneEffectPriority Priority => SceneEffectPriority.BiomeMedium;
+        public override SceneEffectPriority Priority => ModContent.GetInstance<PriorityConfig>().BiomeScenePriority;
     }
 }

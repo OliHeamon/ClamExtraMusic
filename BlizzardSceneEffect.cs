@@ -9,6 +9,6 @@ namespace ClamExtraMusic
 
         public override bool IsSceneEffectActive(Player player) => Main.raining && player.ZoneSnow && !player.ZoneRockLayerHeight;
 
-        public override SceneEffectPriority Priority => SceneEffectPriority.Event;
+        public override SceneEffectPriority Priority => ModContent.GetInstance<PriorityConfig>().EventScenePriority;
     }
 }
