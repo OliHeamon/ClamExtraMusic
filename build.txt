@@ -1,6 +1,6 @@
 displayName = Calamity Mod Extra Music
 author = Oli
-version = 1.0.1
+version = 1.0.2
 side = Client
 hideCode = false
 hideResources = false

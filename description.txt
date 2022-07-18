@@ -8,10 +8,14 @@ Boss themes:
 -Eater of Worlds
 -Brain of Cthulhu
 -Queen Bee
+-Skeletron
 -Wall of Flesh
 -Destroyer/Twins/Skeletron Prime
+-Plantera
+-Golem
 -Duke Fishron
 -Lunatic Cultist
+-Moon Lord
 
 Event themes:
 -Blizzard
