@@ -1,4 +1,4 @@
-A port of the 1.3 mod "Calamity Mod Extra Music", with permission from ENNWAY (aka Turquoise, composer of all the music).
+A port of the 1.3 mod "Calamity Mod Extra Music", with permission from ENNWAY (aka Turquoise, composer of all the music). Now on 1.4.4!
 
 This mod aims to add themes for vanilla features that don't already have unique themes. This mod is client-side, so you do not have to install it on the server for it to work.
 
@@ -26,8 +26,4 @@ Biome themes:
 Notes: 
 Music boxes may be added in a future patch.
 
-Blood Nautilus uses the same theme as the Wall of Flesh, while Deerclops uses the same theme as the Eye of Cthulhu.
-
-Queen Slime and Empress of Light do not have custom themes, as their vanilla variants are already unique.
-
-Priority of the boss, event and biome music is toggleable in the mod's config.
+Each theme can be individually toggled on and off in the config.

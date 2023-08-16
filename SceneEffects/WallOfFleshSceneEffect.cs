@@ -1,8 +1,9 @@
-﻿using Terraria;
+﻿using ClamExtraMusic.Configs;
+using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace ClamExtraMusic
+namespace ClamExtraMusic.SceneEffects
 {
     public class WallOfFleshSceneEffect : ModSceneEffect
     {
@@ -12,6 +13,11 @@ namespace ClamExtraMusic
 
         public override bool IsSceneEffectActive(Player player)
         {
+            if (!ModContent.GetInstance<PriorityConfig>().OverrideWallOfFlesh)
+            {
+                return false;
+            }
+
             if (!NPC.AnyNPCs(NPCID.WallofFlesh))
             {
                 return false;
@@ -22,6 +28,6 @@ namespace ClamExtraMusic
             return wallOfFlesh.DistanceSQ(player.Center) < musicDistance * musicDistance;
         }
 
-        public override SceneEffectPriority Priority => ModContent.GetInstance<PriorityConfig>().BossScenePriority;
+        public override SceneEffectPriority Priority => SceneEffectPriority.BossHigh;
     }
 }

@@ -1,0 +1,115 @@
+Configs: {
+	PriorityConfig: {
+		DisplayName: Music Priority Config
+
+		BossPriority: {
+			Label: Boss Music Priority
+			Tooltip:
+				'''
+				This determines the priority of this mod's boss music overrides.
+				The lowest values prevent the music override from being applied, while high values will make the overrides take full priority.
+				'''
+		}
+
+		EventPriority: {
+			Label: Event Music Priority
+			Tooltip:
+				'''
+				This determines the priority of this mod's blizzard music override.
+				The lowest values prevent the music override from being applied, while high values will make the overrides take full priority.
+				'''
+		}
+
+		BiomePriority: {
+			Label: Biome Music Priority
+			Tooltip:
+				'''
+				This determines the priority of this mod's meteor biome music override.
+				The lowest values prevent the music override from being applied, while high values will make the overrides take full priority.
+				'''
+		}
+
+		OverrideCultist: {
+			Label: Replace Cultist Theme?
+			Tooltip: ""
+		}
+
+		OverrideBrainOfCthulhu: {
+			Label: Replace BoC Theme?
+			Tooltip: ""
+		}
+
+		OverrideSkeletron: {
+			Label: Replace Skeletron Theme?
+			Tooltip: ""
+		}
+
+		OverrideEaterOfWorlds: {
+			Label: Replace EoW Theme?
+			Tooltip: ""
+		}
+
+		OverrideGolem: {
+			Label: Replace Golem Theme?
+			Tooltip: ""
+		}
+
+		OverridePlantera: {
+			Label: Replace Plantera Theme?
+			Tooltip: ""
+		}
+
+		OverrideKingSlime: {
+			Label: Replace King Slime Theme?
+			Tooltip: ""
+		}
+
+		OverrideDukeFishon: {
+			Label: Replace Duke Fishron Theme?
+			Tooltip: ""
+		}
+
+		OverrideEyeOfCthulhu: {
+			Label: Replace EoC Theme?
+			Tooltip: ""
+		}
+
+		OverrideMoonLord: {
+			Label: Replace Moon Lord Theme?
+			Tooltip: ""
+		}
+
+		OverrideMechs: {
+			Label: Replace Mechanical Bosses Theme?
+			Tooltip: ""
+		}
+
+		OverrideQueenBee: {
+			Label: Replace Queen Bee Theme?
+			Tooltip: ""
+		}
+
+		OverrideWallOfFlesh: {
+			Label: Replace WoF Theme?
+			Tooltip: ""
+		}
+
+		OverrideBlizzard: {
+			Label: Replace Blizzard Theme?
+			Tooltip: ""
+		}
+
+		OverrideMeteor: {
+			Label: Replace Meteor Theme?
+			Tooltip: ""
+		}
+	}
+
+	MusicPriority: {
+		Tooltip: ""
+		DoNotPlay.Label: Do Not Play
+		OverrideBiomes.Label: Override Biomes
+		OverrideEvents.Label: Override Events
+		OverrideBosses.Label: Override Bosses
+	}
+}

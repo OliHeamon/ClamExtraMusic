@@ -1,7 +1,8 @@
-﻿using Terraria;
+﻿using System;
+using Terraria;
 using Terraria.ModLoader;
 
-namespace ClamExtraMusic
+namespace ClamExtraMusic.SceneEffects
 {
     [Autoload(false)]
     public class BossMusicSceneEffect : ModSceneEffect
@@ -10,9 +11,12 @@ namespace ClamExtraMusic
 
         private readonly int[] activeNpcIds;
 
-        public BossMusicSceneEffect(string musicName, params int[] activeNpcIds)
+        private readonly Func<bool> overrideMusic;
+
+        public BossMusicSceneEffect(string musicName, Func<bool> overrideMusic, params int[] activeNpcIds)
         {
             this.musicName = musicName;
+            this.overrideMusic = overrideMusic;
             this.activeNpcIds = activeNpcIds;
         }
 
@@ -22,6 +26,11 @@ namespace ClamExtraMusic
 
         public override bool IsSceneEffectActive(Player player)
         {
+            if (!overrideMusic.Invoke())
+            {
+                return false;
+            }
+
             for (int i = 0; i < activeNpcIds.Length; i++)
             {
                 if (NPC.AnyNPCs(activeNpcIds[i]))
@@ -33,6 +42,6 @@ namespace ClamExtraMusic
             return false;
         }
 
-        public override SceneEffectPriority Priority => ModContent.GetInstance<PriorityConfig>().BossScenePriority;
+        public override SceneEffectPriority Priority => SceneEffectPriority.BossHigh;
     }
 }
